@@ -15,7 +15,6 @@ body{
 main{
     margin-left: 5vh;
     margin-right: 5vh;
-    white-space: 10px;
     background: rgba(0, 0, 0, 0.7);
     padding: 1vh;
     border-radius: 10px;
@@ -30,7 +29,7 @@ nav{
 
 ul{
     list-style-type:  none;
-    padding-inline-start: none;
+    padding-left: 0;
 }
 
 h1{
@@ -54,7 +53,6 @@ a{
     justify-content: space-between;
     align-items: center;
     margin-left: 10vh;
-    text-size-adjust: 100px;
 }
 
 .nav__li{

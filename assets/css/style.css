@@ -115,4 +115,28 @@ footer{
     padding-bottom: 10px;
     margin-left: 5vh;
     margin-right: 5vh;
-  }
+}
+
+table, th, td {
+    border:2px solid white;
+    text-align: center;
+    font-weight: bold;
+    padding: 2px;
+}
+
+.tableContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.formContainer {
+    display: flex;
+    justify-content: center;
+}
+.folmElement{
+
+}
+
+fieldset {
+    border: 1px solid white;
+}

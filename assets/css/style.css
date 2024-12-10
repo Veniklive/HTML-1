@@ -1,10 +1,14 @@
 * {
     padding: 0;
     margin: 0;
-    border: 0;
-  }
+}
 
-body{
+button {
+   padding: 1px;
+   margin: 5px;
+}
+
+body {
     background-attachment: fixed;
     background-image: url("../images/background/photo-1442188950719-e8a67aea613a.jpg");
     background-size: cover;
@@ -12,7 +16,7 @@ body{
     color: white;
 }
 
-main{
+main {
     margin-left: 5vh;
     margin-right: 5vh;
     background: rgba(0, 0, 0, 0.7);
@@ -20,78 +24,78 @@ main{
     border-radius: 10px;
 }
 
-nav{
+nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 10px;   
 }
 
-ul{
+ul {
     list-style-type:  none;
     padding-left: 0;
 }
 
-h1{
+h1 {
     font-size: 40px;
     text-align: center;
 }
 
-h2{
+h2 {
     font-size: 30px;
     text-align: center;
 }
 
-a{
+a {
     text-decoration: none;
     color: inherit;
 }
 
-.nav__ul{
+.nav__ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-left: 10vh;
 }
 
-.nav__li{
+.nav__li {
     margin-right: 15vh;
-    font-size: 50px;
+    font-size: 40px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-.nav__logo{
+.nav__logo {
     margin-right: 180px;
     width: 100px;
     height: 100px;
 }
 
-.separation{
+.separation {
     height: 3px;
     background: white;
     border-radius: 19px;
     margin: 10px;
 }
 
-.article__title{
+.article__title {
     display: flex;
     align-items: center;
     gap: 30px;
     justify-content: space-between;
 }
 
-.article__title__img{
+.article__title__img {
     height: 30px;
     object-fit: contain;
 }
 
-.article__title__upIco{
+.article__title__upIco {
     height: 30px;
     object-fit: contain;
     margin-left: auto;
 }
 
-.section{
+.section {
     margin: 15px;
     text-align: justify;
     font-size: 17px;
@@ -99,14 +103,14 @@ a{
     line-height: 1.5;
 }
 
-.section__ul{
+.section__ul {
     list-style-type: disc;
     padding-left: 10px;
     text-indent: 0px;
     margin-left: 50px;
 }
 
-footer{
+footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -134,7 +138,7 @@ fieldset {
     border: 1px solid white;
 }
 
-datalist{
+datalist {
     display: flex;
     justify-content: space-between;
     color: white;
@@ -150,16 +154,19 @@ datalist{
     display: flex;
     justify-content: center;
 }
-.folmElement{
+.folmElement {
     padding: 5px;
     margin: 1px;
 }
 
-.formRange{
+.formRange {
     width: 100%;
 }
 
-.formAddress{
-    display: inline-block;
-    text-align: start;
+.formAddress {
+    vertical-align: top;
+}
+
+.displayNone{
+    display: none;
 }

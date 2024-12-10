@@ -124,6 +124,23 @@ table, th, td {
     padding: 2px;
 }
 
+legend {
+    margin-left: 5px;
+    padding: 0 5px 0 5px;
+    font-weight: bold;
+}
+
+fieldset {
+    border: 1px solid white;
+}
+
+datalist{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    font-size: 10px;
+}
+
 .tableContainer {
     display: flex;
     justify-content: center;
@@ -134,9 +151,15 @@ table, th, td {
     justify-content: center;
 }
 .folmElement{
-
+    padding: 5px;
+    margin: 1px;
 }
 
-fieldset {
-    border: 1px solid white;
+.formRange{
+    width: 100%;
+}
+
+.formAddress{
+    display: inline-block;
+    text-align: start;
 }

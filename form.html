@@ -22,7 +22,6 @@
             </a>
         </nav>
     </header>
-
     <main>
         <div class="formContainer">
             <form>
@@ -49,11 +48,93 @@
                     </div>
 
                     <div class="folmElement">
-                        <input type="hidden" name="">
+                        <label for="driveExpirience">Drive expirience</label>
+                        <select id="driveExpirience">
+                            <option value="low">Low</option>
+                            <option value="medium">Medium</option>
+                            <option value="high">High</option>
+                        </select>
+                    </div>
+                </fieldset>
+                
+
+                <fieldset>
+                    <legend>Contacts</legend>
+                    <div class="folmElement">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" max="30">
+                    </div>
+                    <div class="folmElement">
+                        <label for="phone">Phone</label>
+                        <input type="tel" id="phone" max="15">
+                    </div>
+                    <div class="folmElement">
+                        <label class="formAddress" for="address">Address</label>
+                        <textarea class="formAddress" id="address" rows="5" cols="20"></textarea>
+                    </div>
+                </fieldset>
+
+            
+                <fieldset>
+                    <legend>Car info</legend>
+                    <div class="folmElement">
+                        <label for="brand">Brand</label>
+                        <select id="brand">
+                            <option value="ford">Ford</option>
+                            <option value="toyota">Toyota</option>
+                            <option value="bmw">BMW</option>
+                        </select>
+                    </div>
+                    <div class="folmElement">
+                        <label for="model">Model</label>
+                        <select id="model">
+                            <option value="mondeo4">Mondeo 4</option>
+                            <option value="fiesta1">Fiesta 1.0</option>
+                            <option value="rav4">RAV 4</option>
+                            <option value="camry">Camry</option>
+                            <option value="x5">X5</option>
+                            <option value="i4">i4</option>
+                        </select>
                     </div>
 
-                    
+                    <div class="folmElement">
+                        <label for="used">Used</label>
+                        <input type="checkbox" id="used">
+                    </div>
+
+                    <div class="folmElement">
+                        <div>Color</div>
+                        <label for="colorRadio">Red</label>
+                        <input type="radio" name="colorRadio" id="colorRadioRed">
+                        <label for="colorRadio">Black</label>
+                        <input type="radio" name="colorRadio" id="colorRadioBlack">
+                        <label for="colorRadio">White</label>
+                        <input type="radio" name="colorRadio" id="colorRadioWhite">
+                        <label for="colorRadio">Grey</label>
+                        <input type="radio" name="colorRadio" id="colorRadioGrey">
+                    </div>
+
+                    <div class="folmElement">
+                        <label for="price">Price</label>
+                        <div>
+                            <input class="formRange" type="range" name="price" id="price" min="10" max="100" step="10" list="money">
+                            <datalist class="formRange" id="money">
+                                <option value="10">10</option>
+                                <option value="20">20</option>
+                                <option value="30">30</option>
+                                <option value="40">40</option>
+                                <option value="50">50</option>
+                                <option value="60">60</option>
+                                <option value="70">70</option>
+                                <option value="80">80</option>
+                                <option value="90">90</option>
+                                <option value="100">100</option>
+                            </datalist>
+                        </div>
+                    </div>
                 </fieldset>
+                <button type="reset">Cancel</button>
+                <button type="submit">Ok</button>
             </form>
         </div>
     </main>

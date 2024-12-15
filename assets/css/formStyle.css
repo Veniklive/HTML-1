@@ -36,16 +36,6 @@ ul {
     padding-left: 0;
 }
 
-h1 {
-    font-size: 40px;
-    text-align: center;
-}
-
-h2 {
-    font-size: 30px;
-    text-align: center;
-}
-
 a {
     text-decoration: none;
     color: inherit;
@@ -70,46 +60,6 @@ a {
     height: 100px;
 }
 
-.separation {
-    height: 3px;
-    background: white;
-    border-radius: 19px;
-    margin: 10px;
-}
-
-.article-title {
-    display: flex;
-    align-items: center;
-    gap: 30px;
-    justify-content: space-between;
-}
-
-.article-title-img {
-    height: 30px;
-    object-fit: contain;
-}
-
-.article-title-upIco {
-    height: 30px;
-    object-fit: contain;
-    margin-left: auto;
-}
-
-.section {
-    margin: 15px;
-    text-align: justify;
-    font-size: 17px;
-    text-indent: 40px;
-    line-height: 1.5;
-}
-
-.section-ul {
-    list-style-type: disc;
-    padding-left: 10px;
-    text-indent: 0px;
-    margin-left: 50px;
-}
-
 footer {
     display: flex;
     justify-content: space-between;
@@ -119,13 +69,6 @@ footer {
     padding-bottom: 10px;
     margin-left: 5vh;
     margin-right: 5vh;
-}
-
-table, th, td {
-    border:2px solid white;
-    text-align: center;
-    font-weight: bold;
-    padding: 2px;
 }
 
 legend {
@@ -143,11 +86,6 @@ datalist {
     justify-content: space-between;
     color: white;
     font-size: 10px;
-}
-
-.table-container {
-    display: flex;
-    justify-content: center;
 }
 
 .form-container {

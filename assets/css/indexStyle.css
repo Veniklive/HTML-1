@@ -1,0 +1,129 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-attachment: fixed;
+    background-image: url("../images/background/photo-1442188950719-e8a67aea613a.jpg");
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+main {
+    margin-left: 5vh;
+    margin-right: 5vh;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 1vh;
+    border-radius: 10px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;   
+}
+
+ul {
+    list-style-type:  none;
+    padding-left: 0;
+}
+
+h1 {
+    font-size: 40px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 30px;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.nav-ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 10vh;
+}
+
+.nav-li {
+    margin-right: 15vh;
+    font-size: 40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.nav-logo {
+    margin-right: 180px;
+    width: 100px;
+    height: 100px;
+}
+
+.separation {
+    height: 3px;
+    background: white;
+    border-radius: 19px;
+    margin: 10px;
+}
+
+.article-title {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    justify-content: space-between;
+}
+
+.article-title-img {
+    height: 30px;
+    object-fit: contain;
+}
+
+.article-title-upIco {
+    height: 30px;
+    object-fit: contain;
+    margin-left: auto;
+}
+
+.section {
+    margin: 15px;
+    text-align: justify;
+    font-size: 17px;
+    text-indent: 40px;
+    line-height: 1.5;
+}
+
+.section-ul {
+    list-style-type: disc;
+    padding-left: 10px;
+    text-indent: 0px;
+    margin-left: 50px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 5vh;
+    margin-right: 5vh;
+}
+
+table, th, td {
+    border:2px solid white;
+    text-align: center;
+    font-weight: bold;
+    padding: 2px;
+}
+
+.table-container {
+    display: flex;
+    justify-content: center;
+}

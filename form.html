@@ -11,36 +11,36 @@
 <body>
     <header>  
         <nav>
-          <ul class="nav__ul">
-            <li class="nav__li"><a href="./index.html#Ford">Ford</a></li>
-            <li class="nav__li"><a href="./index.html#Toyota">Toyota</a></li>
-            <li class="nav__li"><a href="./index.html#BMW">BMW</a></li>
-            <li class="nav__li"><a href="./index.html#table">Table</a></li>
-            <li class="nav__li"><a href="./form.html">Form</a></li>
+          <ul class="nav-ul">
+            <li class="nav-li"><a href="./index.html#Ford">Ford</a></li>
+            <li class="nav-li"><a href="./index.html#Toyota">Toyota</a></li>
+            <li class="nav-li"><a href="./index.html#BMW">BMW</a></li>
+            <li class="nav-li"><a href="./index.html#table">Table</a></li>
+            <li class="nav-li"><a href="./form.html">Form</a></li>
           </ul>
             <a href="index.html">
-              <img class="nav__logo" id="top" src="./assets/images/icons/AutoShop.webp" alt="AutoShop">
+              <img class="nav-logo" id="top" src="./assets/images/icons/AutoShop.webp" alt="AutoShop">
             </a>
         </nav>
     </header>
     <main>
-        <div class="formContainer">
+        <div class="form-container">
             <form>
                 <fieldset>
                     <legend>Personal info</legend>
-                    <div class="folmElement">
+                    <div class="folm-element">
                         <label for="firstName">First Name</label>
                         <input id="firstName" type="text" maxlength="20" required>
                     </div>
-                    <div class="folmElement">
+                    <div class="folm-element">
                         <label for="lastName">Last Name</label>
                         <input id="lastName" type="text" maxlength="20" required>
                     </div>
-                    <div class="folmElement">
+                    <div class="folm-element">
                         <label for="birthday">Birthday</label>
                         <input type="date" id="birthday" max="2006-01-01" min="1900-01-01">
                     </div>
-                    <div class="folmElement">
+                    <div class="folm-element">
                         <div>Gender</div>
                         <label for="genderRadioMale">Male</label>
                         <input type="radio" name="genderRadio" id="genderRadioMale">
@@ -48,10 +48,10 @@
                         <input type="radio" name="genderRadio" id="genderRadioFemale">
                     </div>
 
-                    <div class="folmElement">
+                    <div class="folm-element">
                         <label for="driveExpirience">Drive expirience</label>
                         <select id="driveExpirience">
-                            <option class="displayNone" value="" disabled selected>---</option>
+                            <option class="display-none" value="" disabled selected>---</option>
                             <option value="low">Low</option>
                             <option value="medium">Medium</option>
                             <option value="high">High</option>
@@ -60,34 +60,34 @@
                 </fieldset>
                 <fieldset>
                     <legend>Contacts</legend>
-                    <div class="folmElement">
+                    <div class="folm-element">
                         <label for="email">Email</label>
                         <input type="email" id="email" maxlength="320" required>
                     </div>
-                    <div class="folmElement">
+                    <div class="folm-element">
                         <label for="phone">Phone</label>
                         <input type="tel" id="phone" maxlength="15" required>
                     </div>
-                    <div class="folmElement">
-                        <label class="formAddress" for="address">Address</label>
+                    <div class="folm-element">
+                        <label class="form-address" for="address">Address</label>
                         <textarea id="address" rows="5" cols="20"></textarea>
                     </div>
                 </fieldset>
                 <fieldset>
                     <legend>Car info</legend>
-                    <div class="folmElement">
+                    <div class="folm-element">
                         <label for="brand">Brand</label>
                         <select id="brand">
-                            <option class="displayNone" value="" disabled selected>---</option>
+                            <option class="display-none" value="" disabled selected>---</option>
                             <option value="ford">Ford</option>
                             <option value="toyota">Toyota</option>
                             <option value="bmw">BMW</option>
                         </select>
                     </div>
-                    <div class="folmElement">
+                    <div class="folm-element">
                         <label for="model">Model</label>
                         <select id="model">
-                            <option class="displayNone" value="" disabled selected>---</option>
+                            <option class="display-none" value="" disabled selected>---</option>
                             <option value="mondeo4">Mondeo 4</option>
                             <option value="fiesta1">Fiesta 1.0</option>
                             <option value="rav4">RAV 4</option>
@@ -96,11 +96,11 @@
                             <option value="i4">i4</option>
                         </select>
                     </div>
-                    <div class="folmElement">
+                    <div class="folm-element">
                         <label for="used">Used</label>
                         <input type="checkbox" id="used">
                     </div>
-                    <div class="folmElement">
+                    <div class="folm-element">
                         <div>Color</div>
                         <label for="colorRadioRed">Red</label>
                         <input type="radio" name="colorRadio" id="colorRadioRed" checked>
@@ -111,11 +111,11 @@
                         <label for="colorRadioGrey">Grey</label>
                         <input type="radio" name="colorRadio" id="colorRadioGrey">
                     </div>
-                    <div class="folmElement">
+                    <div class="folm-element">
                         <label for="price">Price</label>
                         <div>
-                            <input class="formRange" type="range" name="price" id="price" min="10" max="100" step="10" value="10" list="money">
-                            <datalist class="formRange" id="money">
+                            <input class="form-range" type="range" name="price" id="price" min="10" max="100" step="10" value="10" list="money">
+                            <datalist class="form-range" id="money">
                                 <option value="10">10</option>
                                 <option value="20">20</option>
                                 <option value="30">30</option>

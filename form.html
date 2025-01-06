@@ -1,156 +1,221 @@
 <!DOCTYPE html>
 <html lang="uk">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./assets/css/formStyle.css">
-  <link type="image/x-icon" href="/assets/images/icons/AutoShop.webp" rel="shortcut icon">
-  <link type="Image/x-icon" href="./assets/images/icons/AutoShop.webp" rel="icon">
-  <title>Car Shop</title>
-</head>
-<body>
-    <header>  
-        <nav>
-          <ul class="nav-ul">
-            <li class="nav-li"><a href="./index.html#Ford">Ford</a></li>
-            <li class="nav-li"><a href="./index.html#Toyota">Toyota</a></li>
-            <li class="nav-li"><a href="./index.html#BMW">BMW</a></li>
-            <li class="nav-li"><a href="./index.html#table">Table</a></li>
-            <li class="nav-li"><a href="./form.html">Form</a></li>
-          </ul>
-            <a href="index.html">
-              <img class="nav-logo" id="top" src="./assets/images/icons/AutoShop.webp" alt="AutoShop">
-            </a>
-        </nav>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/formStyle.css" />
+    <link
+      type="image/x-icon"
+      href="/assets/images/icons/AutoShop.webp"
+      rel="shortcut icon"
+    />
+    <link
+      type="Image/x-icon"
+      href="./assets/images/icons/AutoShop.webp"
+      rel="icon"
+    />
+    <title>Car Shop</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul class="nav-ul">
+          <li class="nav-li"><a href="./index.html#Ford">Ford</a></li>
+          <li class="nav-li"><a href="./index.html#Toyota">Toyota</a></li>
+          <li class="nav-li"><a href="./index.html#BMW">BMW</a></li>
+          <li class="nav-li"><a href="./index.html#table">Table</a></li>
+          <li class="nav-li"><a href="./form.html">Form</a></li>
+        </ul>
+        <a href="index.html">
+          <img
+            class="nav-logo"
+            id="top"
+            src="./assets/images/icons/AutoShop.webp"
+            alt="AutoShop"
+          />
+        </a>
+      </nav>
     </header>
     <main>
-        <div class="form-container">
-            <form>
-                <fieldset>
-                    <legend>Personal info</legend>
-                    <div class="folm-element">
-                        <label for="firstName">First Name</label>
-                        <input id="firstName" type="text" maxlength="20" required>
-                    </div>
-                    <div class="folm-element">
-                        <label for="lastName">Last Name</label>
-                        <input id="lastName" type="text" maxlength="20" required>
-                    </div>
-                    <div class="folm-element">
-                        <label for="birthday">Birthday</label>
-                        <input type="date" id="birthday" max="2006-01-01" min="1900-01-01">
-                    </div>
-                    <div class="folm-element">
-                        <div>Gender</div>
-                        <label for="genderRadioMale">Male</label>
-                        <input type="radio" name="genderRadio" id="genderRadioMale">
-                        <label for="genderRadioFemale">Female</label>
-                        <input type="radio" name="genderRadio" id="genderRadioFemale">
-                    </div>
+      <div class="form-container">
+        <form>
+          <div class="form-body">
+            <fieldset>
+              <legend>Personal info</legend>
+              <div class="folm-element">
+                <label for="firstName">First Name</label>
+                <input id="firstName" type="text" maxlength="20" required />
+              </div>
+              <div class="folm-element">
+                <label for="lastName">Last Name</label>
+                <input id="lastName" type="text" maxlength="20" required />
+              </div>
+              <div class="folm-element">
+                <label for="birthday">Birthday</label>
+                <input
+                  type="date"
+                  id="birthday"
+                  max="2006-01-01"
+                  min="1900-01-01"
+                />
+              </div>
+              <div class="folm-element">
+                <div>Gender</div>
+                <div>
+                  <label for="genderRadioMale">Male</label>
+                  <input type="radio" name="genderRadio" id="genderRadioMale" />
+                </div>
+                <div>
+                  <label for="genderRadioFemale">Female</label>
+                  <input
+                    type="radio"
+                    name="genderRadio"
+                    id="genderRadioFemale"
+                  />
+                </div>
+              </div>
 
-                    <div class="folm-element">
-                        <label for="driveExpirience">Drive expirience</label>
-                        <select id="driveExpirience">
-                            <option class="display-none" value="" disabled selected>---</option>
-                            <option value="low">Low</option>
-                            <option value="medium">Medium</option>
-                            <option value="high">High</option>
-                        </select>
-                    </div>
-                </fieldset>
-                <fieldset>
-                    <legend>Contacts</legend>
-                    <div class="folm-element">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" maxlength="320" required>
-                    </div>
-                    <div class="folm-element">
-                        <label for="phone">Phone</label>
-                        <input type="tel" id="phone" maxlength="15" required>
-                    </div>
-                    <div class="folm-element">
-                        <label class="form-address" for="address">Address</label>
-                        <textarea id="address" rows="5" cols="20"></textarea>
-                    </div>
-                </fieldset>
-                <fieldset>
-                    <legend>Car info</legend>
-                    <div class="folm-element">
-                        <label for="brand">Brand</label>
-                        <select id="brand">
-                            <option class="display-none" value="" disabled selected>---</option>
-                            <option value="ford">Ford</option>
-                            <option value="toyota">Toyota</option>
-                            <option value="bmw">BMW</option>
-                        </select>
-                    </div>
-                    <div class="folm-element">
-                        <label for="model">Model</label>
-                        <select id="model">
-                            <option class="display-none" value="" disabled selected>---</option>
-                            <option value="mondeo4">Mondeo 4</option>
-                            <option value="fiesta1">Fiesta 1.0</option>
-                            <option value="rav4">RAV 4</option>
-                            <option value="camry">Camry</option>
-                            <option value="x5">X5</option>
-                            <option value="i4">i4</option>
-                        </select>
-                    </div>
-                    <div class="folm-element">
-                        <label for="used">Used</label>
-                        <input type="checkbox" id="used">
-                    </div>
-                    <div class="folm-element">
-                        <div>Color</div>
-                        <label for="colorRadioRed">Red</label>
-                        <input type="radio" name="colorRadio" id="colorRadioRed" checked>
-                        <label for="colorRadioBlack">Black</label>
-                        <input type="radio" name="colorRadio" id="colorRadioBlack">
-                        <label for="colorRadioWhite">White</label>
-                        <input type="radio" name="colorRadio" id="colorRadioWhite">
-                        <label for="colorRadioGrey">Grey</label>
-                        <input type="radio" name="colorRadio" id="colorRadioGrey">
-                    </div>
-                    <div class="folm-element">
-                        <label for="price">Price</label>
-                        <div>
-                            <input class="form-range" type="range" name="price" id="price" min="10" max="100" step="10" value="10" list="money">
-                            <datalist class="form-range" id="money">
-                                <option value="10">10</option>
-                                <option value="20">20</option>
-                                <option value="30">30</option>
-                                <option value="40">40</option>
-                                <option value="50">50</option>
-                                <option value="60">60</option>
-                                <option value="70">70</option>
-                                <option value="80">80</option>
-                                <option value="90">90</option>
-                                <option value="100">100</option>
-                            </datalist>
-                        </div>
-                    </div>
-                </fieldset>
-                <button type="reset">Cancel</button>
-                <button type="submit">Ok</button>
-            </form>
-        </div>
+              <div class="folm-element">
+                <label for="driveExpirience">Drive expirience</label>
+                <select id="driveExpirience">
+                  <option class="display-none" value="" disabled selected>
+                    ---
+                  </option>
+                  <option value="expert">expert</option>
+                  <option value="more than 10">more than 10</option>
+                  <option value="5-10">5-10</option>
+                  <option value="2-5">2-5</option>
+                  <option value="less than 2">less than 2</option>
+                  <option value="beginner">beginner</option>
+                </select>
+              </div>
+            </fieldset>
+            <fieldset>
+              <legend>Contacts</legend>
+              <div class="folm-element">
+                <label for="email">Email</label>
+                <input type="email" id="email" maxlength="320" required />
+              </div>
+              <div class="folm-element">
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" maxlength="15" required />
+              </div>
+              <div class="folm-element">
+                <label class="form-address" for="address">Address</label>
+                <textarea id="address" rows="2" cols="20"></textarea>
+              </div>
+            </fieldset>
+            <fieldset>
+              <legend>Car info</legend>
+              <div class="folm-element">
+                <label for="brand">Brand</label>
+                <select id="brand">
+                  <option class="display-none" value="" disabled selected>
+                    ---
+                  </option>
+                  <option value="ford">Ford</option>
+                  <option value="toyota">Toyota</option>
+                  <option value="bmw">BMW</option>
+                </select>
+              </div>
+              <div class="folm-element">
+                <label for="model">Model</label>
+                <select id="model">
+                  <option class="display-none" value="" disabled selected>
+                    ---
+                  </option>
+                  <option value="mondeo4">Mondeo 4</option>
+                  <option value="fiesta1">Fiesta 1.0</option>
+                  <option value="rav4">RAV 4</option>
+                  <option value="camry">Camry</option>
+                  <option value="x5">X5</option>
+                  <option value="i4">i4</option>
+                </select>
+              </div>
+              <div class="folm-element">
+                <div>
+                  <label for="used">Used</label>
+                  <input type="checkbox" id="used" />
+                </div>
+              </div>
+              <div class="folm-element">
+                <label for="colorRadioRed">Red</label>
+                <input
+                  type="radio"
+                  name="colorRadio"
+                  id="colorRadioRed"
+                  checked
+                />
+                <label for="colorRadioBlack">Black</label>
+                <input type="radio" name="colorRadio" id="colorRadioBlack" />
+                <label for="colorRadioBlue">Blue</label>
+                <input type="radio" name="colorRadio" id="colorRadioBlue" />
+                <label for="colorRadioWhite">White</label>
+                <input type="radio" name="colorRadio" id="colorRadioWhite" />
+                <label for="colorRadioGrey">Grey</label>
+                <input type="radio" name="colorRadio" id="colorRadioGrey" />
+              </div>
+              <div class="folm-element">
+                <div>
+                  <label for="price">Price</label>
+                  <div>
+                    <input
+                      class="form-range"
+                      type="range"
+                      name="price"
+                      id="price"
+                      min="10"
+                      max="100"
+                      step="10"
+                      value="10"
+                      list="money"
+                    />
+                    <datalist class="form-range" id="money">
+                      <option value="10">10</option>
+                      <option value="20">20</option>
+                      <option value="30">30</option>
+                      <option value="40">40</option>
+                      <option value="50">50</option>
+                      <option value="60">60</option>
+                      <option value="70">70</option>
+                      <option value="80">80</option>
+                      <option value="90">90</option>
+                      <option value="100">100</option>
+                    </datalist>
+                  </div>
+                </div>
+              </div>
+            </fieldset>
+          </div>
+          <div class="buttons-container">
+            <button type="reset">Cancel</button>
+            <button type="submit">Ok</button>
+          </div>
+        </form>
+      </div>
     </main>
     <footer>
-        <div>
-            <h4>Адреса:</h4>
-            <a target="_blank" href="https://www.google.com/search?client=opera-gx&q=%D0%94%D0%BD%D1%96%D0%BF%D1%80%D0%BE%D0%BF%D0%B5%D1%82%D1%80%D0%BE%D0%B2%D1%81%D1%8C%D0%BA%D0%B0+%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%8C%2C+%D0%BC%D1%96%D1%81%D1%82%D0%BE+%D0%94%D0%BD%D1%96%D0%BF%D1%80%D0%BE%2C+%D0%BF%D1%80%D0%BE%D0%B2.+%D0%9F%D0%B0%D1%82%D0%BE%D1%80%D0%B6%D0%B8%D0%BD%D1%81%D1%8C%D0%BA%D0%BE%D0%B3%D0%BE%2C+94&sourceid=opera&ie=UTF-8&oe=UTF-8">Дніпропетровська область, місто Дніпро, пров. Паторжинського, 94</a>
-        </div>
-        <div>
-            <h4>Контактні дані:</h4>
-            <ul>
-            <li><a href="tel:+380964523412">+380964523412</a></li>
-            <li><a href="mailto:OldCarShop@gmail.com">OldCarShop@gmail.com</a></li>
-            </ul>
-        </div>
-        <div>
-            <h4>Сайт:</h4>
-            <a target="_blank" href="http://127.0.0.1:5500">www.CarShop.com</a>
-        </div>
+      <div>
+        <h4>Адреса:</h4>
+        <a
+          target="_blank"
+          href="https://www.google.com/search?client=opera-gx&q=%D0%94%D0%BD%D1%96%D0%BF%D1%80%D0%BE%D0%BF%D0%B5%D1%82%D1%80%D0%BE%D0%B2%D1%81%D1%8C%D0%BA%D0%B0+%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%8C%2C+%D0%BC%D1%96%D1%81%D1%82%D0%BE+%D0%94%D0%BD%D1%96%D0%BF%D1%80%D0%BE%2C+%D0%BF%D1%80%D0%BE%D0%B2.+%D0%9F%D0%B0%D1%82%D0%BE%D1%80%D0%B6%D0%B8%D0%BD%D1%81%D1%8C%D0%BA%D0%BE%D0%B3%D0%BE%2C+94&sourceid=opera&ie=UTF-8&oe=UTF-8"
+          >Дніпропетровська область, місто Дніпро, пров. Паторжинського, 94</a
+        >
+      </div>
+      <div>
+        <h4>Контактні дані:</h4>
+        <ul>
+          <li><a href="tel:+380964523412">+380964523412</a></li>
+          <li>
+            <a href="mailto:OldCarShop@gmail.com">OldCarShop@gmail.com</a>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h4>Сайт:</h4>
+        <a target="_blank" href="http://127.0.0.1:5500">www.CarShop.com</a>
+      </div>
     </footer>
-</body>
+  </body>
 </html>

@@ -37,6 +37,7 @@
       </nav>
     </header>
     <main>
+      <h1>Homework for CSS flexbox</h1>
       <div class="form-container">
         <form>
           <div class="form-body">
@@ -94,15 +95,27 @@
               <legend>Contacts</legend>
               <div class="folm-element">
                 <label for="email">Email</label>
-                <input type="email" id="email" maxlength="320" required />
+                <input
+                  class="width-lim"
+                  type="email"
+                  id="email"
+                  maxlength="320"
+                  required
+                />
               </div>
               <div class="folm-element">
                 <label for="phone">Phone</label>
-                <input type="tel" id="phone" maxlength="15" required />
+                <input
+                  class="width-lim"
+                  type="tel"
+                  id="phone"
+                  maxlength="15"
+                  required
+                />
               </div>
               <div class="folm-element">
                 <label class="form-address" for="address">Address</label>
-                <textarea id="address" rows="2" cols="20"></textarea>
+                <textarea id="address" rows="2" cols="18"></textarea>
               </div>
             </fieldset>
             <fieldset>
@@ -133,27 +146,37 @@
                 </select>
               </div>
               <div class="folm-element">
-                <div>
+                <div class="used-checkbox">
                   <label for="used">Used</label>
                   <input type="checkbox" id="used" />
                 </div>
               </div>
-              <div class="folm-element">
-                <label for="colorRadioRed">Red</label>
-                <input
-                  type="radio"
-                  name="colorRadio"
-                  id="colorRadioRed"
-                  checked
-                />
-                <label for="colorRadioBlack">Black</label>
-                <input type="radio" name="colorRadio" id="colorRadioBlack" />
-                <label for="colorRadioBlue">Blue</label>
-                <input type="radio" name="colorRadio" id="colorRadioBlue" />
-                <label for="colorRadioWhite">White</label>
-                <input type="radio" name="colorRadio" id="colorRadioWhite" />
-                <label for="colorRadioGrey">Grey</label>
-                <input type="radio" name="colorRadio" id="colorRadioGrey" />
+              <div class="folm-element color-radio">
+                <div>
+                  <label for="colorRadioRed">Red</label>
+                  <input
+                    type="radio"
+                    name="colorRadio"
+                    id="colorRadioRed"
+                    checked
+                  />
+                </div>
+                <div>
+                  <label for="colorRadioBlack">Black</label>
+                  <input type="radio" name="colorRadio" id="colorRadioBlack" />
+                </div>
+                <div>
+                  <label for="colorRadioBlue">Blue</label>
+                  <input type="radio" name="colorRadio" id="colorRadioBlue" />
+                </div>
+                <div>
+                  <label for="colorRadioWhite">White</label>
+                  <input type="radio" name="colorRadio" id="colorRadioWhite" />
+                </div>
+                <div>
+                  <label for="colorRadioGrey">Grey</label>
+                  <input type="radio" name="colorRadio" id="colorRadioGrey" />
+                </div>
               </div>
               <div class="folm-element">
                 <div>
@@ -165,7 +188,7 @@
                       name="price"
                       id="price"
                       min="10"
-                      max="100"
+                      max="80"
                       step="10"
                       value="10"
                       list="money"
@@ -179,8 +202,6 @@
                       <option value="60">60</option>
                       <option value="70">70</option>
                       <option value="80">80</option>
-                      <option value="90">90</option>
-                      <option value="100">100</option>
                     </datalist>
                   </div>
                 </div>

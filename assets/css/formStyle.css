@@ -3,6 +3,11 @@
   margin: 0;
 }
 
+h1 {
+  text-align: center;
+  margin: 1em;
+}
+
 button {
   padding: 1px;
   margin: 5px;
@@ -125,4 +130,29 @@ datalist {
 
 .display-none {
   display: none;
+}
+
+.width-lim-ep {
+  width: 140px;
+  margin-left: 30px;
+}
+
+.width-lim-bm {
+  width: 100px;
+}
+
+#brand,
+#model {
+  width: 100px;
+}
+
+.color-radio div {
+  display: flex;
+  align-items: center;
+}
+
+.used-checkbox {
+  display: flex;
+  align-items: center;
+  gap: 2em;
 }

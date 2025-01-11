@@ -38,183 +38,171 @@
     </header>
     <main>
       <h1>Homework for CSS flexbox</h1>
-      <div class="form-container">
-        <form>
-          <div class="form-body">
-            <fieldset>
-              <legend>Personal info</legend>
-              <div class="folm-element">
-                <label for="firstName">First Name</label>
-                <input id="firstName" type="text" maxlength="20" required />
+      <form>
+        <div class="form-inputs">
+          <fieldset>
+            <legend>Personal info</legend>
+            <div class="folm-element">
+              <label for="firstName">First Name</label>
+              <input id="firstName" type="text" maxlength="20" required />
+            </div>
+            <div class="folm-element">
+              <label for="lastName">Last Name</label>
+              <input id="lastName" type="text" maxlength="20" required />
+            </div>
+            <div class="folm-element">
+              <label for="birthday">Birthday</label>
+              <input
+                class="birthday-input"
+                type="date"
+                id="birthday"
+                max="2006-01-01"
+                min="1900-01-01"
+              />
+            </div>
+            <div class="folm-element">
+              <div>Gender</div>
+              <div>
+                <label for="genderRadioMale">Male</label>
+                <input type="radio" name="genderRadio" id="genderRadioMale" />
               </div>
-              <div class="folm-element">
-                <label for="lastName">Last Name</label>
-                <input id="lastName" type="text" maxlength="20" required />
+              <div>
+                <label for="genderRadioFemale">Female</label>
+                <input type="radio" name="genderRadio" id="genderRadioFemale" />
               </div>
-              <div class="folm-element">
-                <label for="birthday">Birthday</label>
-                <input
-                  class="birthday-input"
-                  type="date"
-                  id="birthday"
-                  max="2006-01-01"
-                  min="1900-01-01"
-                />
-              </div>
-              <div class="folm-element">
-                <div>Gender</div>
-                <div>
-                  <label for="genderRadioMale">Male</label>
-                  <input type="radio" name="genderRadio" id="genderRadioMale" />
-                </div>
-                <div>
-                  <label for="genderRadioFemale">Female</label>
-                  <input
-                    type="radio"
-                    name="genderRadio"
-                    id="genderRadioFemale"
-                  />
-                </div>
-              </div>
+            </div>
 
-              <div class="folm-element">
-                <label for="driveExpirience">Drive expirience</label>
-                <select id="driveExpirience">
-                  <option class="display-none" value="" disabled selected>
-                    ---
-                  </option>
-                  <option value="expert">expert</option>
-                  <option value="more than 10">more than 10</option>
-                  <option value="5-10">5-10</option>
-                  <option value="2-5">2-5</option>
-                  <option value="less than 2">less than 2</option>
-                  <option value="beginner">beginner</option>
-                </select>
+            <div class="folm-element">
+              <label for="driveExpirience">Drive expirience</label>
+              <select id="driveExpirience">
+                <option hidden value="" disabled selected>---</option>
+                <option value="expert">expert</option>
+                <option value="more than 10">more than 10</option>
+                <option value="5-10">5-10</option>
+                <option value="2-5">2-5</option>
+                <option value="less than 2">less than 2</option>
+                <option value="beginner">beginner</option>
+              </select>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Contacts</legend>
+            <div class="folm-element">
+              <label for="email">Email</label>
+              <input
+                class="width-lim"
+                type="email"
+                id="email"
+                maxlength="320"
+                required
+              />
+            </div>
+            <div class="folm-element">
+              <label for="phone">Phone</label>
+              <input
+                class="width-lim"
+                type="tel"
+                id="phone"
+                maxlength="15"
+                required
+              />
+            </div>
+            <div class="folm-element">
+              <label class="form-address" for="address">Address</label>
+              <textarea id="address" rows="2" cols="18"></textarea>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Car info</legend>
+            <div class="folm-element">
+              <label for="brand">Brand</label>
+              <select id="brand">
+                <option hidden value="" disabled selected>---</option>
+                <option value="ford">Ford</option>
+                <option value="toyota">Toyota</option>
+                <option value="bmw">BMW</option>
+              </select>
+            </div>
+            <div class="folm-element">
+              <label for="model">Model</label>
+              <select id="model">
+                <option hidden value="" disabled selected>---</option>
+                <option value="mondeo4">Mondeo 4</option>
+                <option value="fiesta1">Fiesta 1.0</option>
+                <option value="rav4">RAV 4</option>
+                <option value="camry">Camry</option>
+                <option value="x5">X5</option>
+                <option value="i4">i4</option>
+              </select>
+            </div>
+            <div class="folm-element">
+              <div class="used-checkbox">
+                <label for="used">Used</label>
+                <input type="checkbox" id="used" />
               </div>
-            </fieldset>
-            <fieldset>
-              <legend>Contacts</legend>
-              <div class="folm-element">
-                <label for="email">Email</label>
+            </div>
+            <div class="folm-element color-radio">
+              <div>
+                <label for="colorRadioRed">Red</label>
                 <input
-                  class="width-lim"
-                  type="email"
-                  id="email"
-                  maxlength="320"
-                  required
+                  type="radio"
+                  name="colorRadio"
+                  id="colorRadioRed"
+                  checked
                 />
               </div>
-              <div class="folm-element">
-                <label for="phone">Phone</label>
-                <input
-                  class="width-lim"
-                  type="tel"
-                  id="phone"
-                  maxlength="15"
-                  required
-                />
+              <div>
+                <label for="colorRadioBlack">Black</label>
+                <input type="radio" name="colorRadio" id="colorRadioBlack" />
               </div>
-              <div class="folm-element">
-                <label class="form-address" for="address">Address</label>
-                <textarea id="address" rows="2" cols="18"></textarea>
+              <div>
+                <label for="colorRadioBlue">Blue</label>
+                <input type="radio" name="colorRadio" id="colorRadioBlue" />
               </div>
-            </fieldset>
-            <fieldset>
-              <legend>Car info</legend>
-              <div class="folm-element">
-                <label for="brand">Brand</label>
-                <select id="brand">
-                  <option class="display-none" value="" disabled selected>
-                    ---
-                  </option>
-                  <option value="ford">Ford</option>
-                  <option value="toyota">Toyota</option>
-                  <option value="bmw">BMW</option>
-                </select>
+              <div>
+                <label for="colorRadioWhite">White</label>
+                <input type="radio" name="colorRadio" id="colorRadioWhite" />
               </div>
-              <div class="folm-element">
-                <label for="model">Model</label>
-                <select id="model">
-                  <option class="display-none" value="" disabled selected>
-                    ---
-                  </option>
-                  <option value="mondeo4">Mondeo 4</option>
-                  <option value="fiesta1">Fiesta 1.0</option>
-                  <option value="rav4">RAV 4</option>
-                  <option value="camry">Camry</option>
-                  <option value="x5">X5</option>
-                  <option value="i4">i4</option>
-                </select>
+              <div>
+                <label for="colorRadioGrey">Grey</label>
+                <input type="radio" name="colorRadio" id="colorRadioGrey" />
               </div>
-              <div class="folm-element">
-                <div class="used-checkbox">
-                  <label for="used">Used</label>
-                  <input type="checkbox" id="used" />
-                </div>
-              </div>
-              <div class="folm-element color-radio">
+            </div>
+            <div class="folm-element">
+              <div>
+                <label for="price">Price</label>
                 <div>
-                  <label for="colorRadioRed">Red</label>
                   <input
-                    type="radio"
-                    name="colorRadio"
-                    id="colorRadioRed"
-                    checked
+                    class="form-range"
+                    type="range"
+                    name="price"
+                    id="price"
+                    min="10"
+                    max="80"
+                    step="10"
+                    value="10"
+                    list="money"
                   />
-                </div>
-                <div>
-                  <label for="colorRadioBlack">Black</label>
-                  <input type="radio" name="colorRadio" id="colorRadioBlack" />
-                </div>
-                <div>
-                  <label for="colorRadioBlue">Blue</label>
-                  <input type="radio" name="colorRadio" id="colorRadioBlue" />
-                </div>
-                <div>
-                  <label for="colorRadioWhite">White</label>
-                  <input type="radio" name="colorRadio" id="colorRadioWhite" />
-                </div>
-                <div>
-                  <label for="colorRadioGrey">Grey</label>
-                  <input type="radio" name="colorRadio" id="colorRadioGrey" />
+                  <datalist class="form-range" id="money">
+                    <option value="10">10</option>
+                    <option value="20">20</option>
+                    <option value="30">30</option>
+                    <option value="40">40</option>
+                    <option value="50">50</option>
+                    <option value="60">60</option>
+                    <option value="70">70</option>
+                    <option value="80">80</option>
+                  </datalist>
                 </div>
               </div>
-              <div class="folm-element">
-                <div>
-                  <label for="price">Price</label>
-                  <div>
-                    <input
-                      class="form-range"
-                      type="range"
-                      name="price"
-                      id="price"
-                      min="10"
-                      max="80"
-                      step="10"
-                      value="10"
-                      list="money"
-                    />
-                    <datalist class="form-range" id="money">
-                      <option value="10">10</option>
-                      <option value="20">20</option>
-                      <option value="30">30</option>
-                      <option value="40">40</option>
-                      <option value="50">50</option>
-                      <option value="60">60</option>
-                      <option value="70">70</option>
-                      <option value="80">80</option>
-                    </datalist>
-                  </div>
-                </div>
-              </div>
-            </fieldset>
-          </div>
-          <div class="buttons-container">
-            <button type="reset">Cancel</button>
-            <button type="submit">Ok</button>
-          </div>
-        </form>
-      </div>
+            </div>
+          </fieldset>
+        </div>
+        <div class="buttons-container">
+          <button type="reset">Cancel</button>
+          <button type="submit">Ok</button>
+        </div>
+      </form>
     </main>
     <footer>
       <div>

@@ -1,4 +1,5 @@
 * {
+  box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
@@ -101,17 +102,19 @@ datalist {
   font-size: 10px;
 }
 
-.form-body {
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.form-inputs {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 3px;
 }
 
-.form-container {
-  display: flex;
-  justify-content: center;
-}
 .folm-element {
   display: flex;
   align-items: center;
@@ -134,10 +137,6 @@ datalist {
   justify-content: center;
 }
 
-.display-none {
-  display: none;
-}
-
 #brand,
 #model {
   width: 100px;
@@ -147,7 +146,7 @@ datalist {
   width: 150px;
 }
 
-.color-radio div {
+.color-radio > div {
   display: flex;
   align-items: center;
 }

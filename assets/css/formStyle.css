@@ -138,15 +138,6 @@ datalist {
   display: none;
 }
 
-.width-lim-ep {
-  width: 140px;
-  margin-left: 30px;
-}
-
-.width-lim-bm {
-  width: 100px;
-}
-
 #brand,
 #model {
   width: 100px;
